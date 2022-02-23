@@ -1,0 +1,344 @@
+/* ===================== reset ================================= */
+
+{
+    margin: 0;
+	padding: 0;
+    font-size: 100%;
+    border: none;
+	outline: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+  
+}
+
+/* ===================== container ================================= */
+
+body{
+    background-color: #f5f5f5;
+    padding: 0 3%;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ===================== HEADER / Cabecalho  ================================= */
+
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+
+}
+
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../img/icon.png) center center/56px no-repeat; 
+    font-size: 0;
+}
+
+
+/* ===================== Menu ================================= */
+
+
+
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    margin-right: 8%;
+    float: right;
+    text-align: center;
+    color: #fff;
+    border-radius: 56px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ce2e3c, #da6709);
+    
+}
+
+.btn-close{
+    font-size: 1.5em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu li{
+    padding: 1.5%;
+}
+
+.menu li a{
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+    border: 1px solid #da6709;
+}
+
+
+.espaco{
+    padding: 0 0 75px 0;
+}
+
+/* ===================== Banner ================================= */
+
+.banner {
+    margin-top: 2%;
+    text-align: center;
+    background: url(../img/bg.jpg) no-repeat fixed;
+    padding: 2% 0 2% 0;
+    border-radius: 7px;
+}
+
+.title h2{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.title h3{
+    font-size: 1.5em;
+    color: #fff;
+    
+}
+
+
+/* ===================== Servicos ================================= */
+
+.servicos{
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    text-align: left;
+    padding: 3% 4%;
+    border-radius: 7px;
+    margin-bottom: 3%;
+
+}
+
+.servico{
+    width: 96%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+
+.servico img{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+
+}
+
+.inner{
+    padding: 5% 1%;
+}
+
+.inner a{
+    font-size: 1.5em;
+    color: #130400;
+    font-weight: 700;
+}
+
+.inner h4{
+    font-size: 1.2em;
+    color: #130400;
+    margin-top: 2%;
+}
+
+.inner p{
+    margin-top: 6%;
+    color: #130400;
+    line-height: 1.5em;
+}
+
+/* ===================== Newsletter ================================= */
+
+.newsletter{
+    text-align: left;
+    background: url(../img/bg.jpg) no-repeat fixed;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 1%;
+}
+
+/* ===================== Rodapé ================================= */
+
+.rodape{
+    width: 95%;
+    text-align: left;
+    /*color: #000;*/
+    /*background: linear-gradient(to right, #ce2e3c, #da6709);*/
+}
+
+.social-icons a{
+    font-size: 1.5em;
+    color: #000;
+    margin-right: 3%;  
+}
+
+.social-icons a:last-child{
+    margin-right: 0;   /* foi zerado a margem do último elemento */
+}
+
+.social-icons a:hover{
+    /*color: rgba(255,255,255,0.7)*/
+    color: #da6709;
+    
+}
+
+
+.copyright{
+    margin-top: 2%;
+    padding: 0.5%;
+    color: #000;
+    /*background: linear-gradient(to right, #ce2e3c, #da6709);*/
+}
+
+
+/* ===================== container ================================= */
+
+
+/* ======================= Device Celular  ======================= */
+
+@media screen and (min-width: 320px){
+    .logo{
+        
+    }
+
+    .btn-menu{
+
+    }
+
+   
+}
+
+/* media screen é aplicado qdo a área de visualização for quadrado ou paisagem */
+
+/* ======================= Device Celular e Tablet ======================= */
+
+@media screen and (min-width: 768px){
+      .servico{
+        width: 47%;
+        background-color: #fff;
+        float: left;
+        text-align: left;
+        border-radius: 7px;
+        margin-right: 3%;
+    }
+
+    .servico:nth-child(1){
+        margin-left: 0%; /* zera a margem apenas do segundo objeto */
+    }
+}
+
+/* ======================= Device Desktop e Tablet  ======================= */
+
+@media screen and (min-width: 961px){
+    .logo{
+        width: 214px;
+        height: 56px;
+        float: left;
+        background: url(../img/logotipo.png) center center/214px no-repeat; 
+        font-size: 0;
+        
+    }
+    
+    .btn-menu{
+        display: none;
+    }
+
+    .btn-close{
+        display: none;
+    }
+    
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 36px;
+        background: #fff;
+        float: right;
+        display: block;
+        position: static;
+        margin-right: 3.5%;
+              
+    }
+
+    .menu li{
+        padding: 0px;
+        float: left;
+    }
+    
+    .menu li a{
+        font-size: 1.15em;
+        color: #000;
+        padding: 10px;
+    }
+    
+    .menu li a:hover{
+        border: none;
+        color: #da6709;
+    }
+
+    .servico{
+        width: 47%;
+        background-color: #fff;
+        float: left;
+        text-align: left;
+        border-radius: 7px;
+        margin-right: 3%;
+    }
+
+    .servico:nth-child(1){
+        margin-left: 0%; /* zera a margem apenas do segundo objeto */
+    }
+
+}
+
+/* ======================= WIDE Screens  ======================= */
+
+@media screen and (min-width: 1180px){
+    
+    .servico{
+        width: 30%;
+        background-color: #fff;
+        float: left;
+        text-align: left;
+        border-radius: 7px;
+        margin-right: 3%;
+    }
+
+    .servico:nth-child(1){
+        margin-left: 0%; /* zera a margem apenas do segundo objeto */
+    }
+    
+
+}
+

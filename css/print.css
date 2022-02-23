@@ -1,0 +1,44 @@
+/* ===================== reset ================================= */
+
+*{
+     color:#000;
+     font-size: 1.0em;
+     padding: 0 0 0 0;
+     text-align: left;
+}
+
+/* ===================== Impressão ================================= */
+
+@media print{
+    .btn-menu{
+        display: none;
+    }
+
+    .btn-close{
+        display: none;
+    }
+
+    .servico img{
+        display: none;
+    }
+
+    .banner h2{
+        font-size: 1.25em;
+        color:#000;
+    }
+
+    .banner h3{
+        font-size: 1.0em;
+        color:#000;
+    }
+
+    .espaco{
+        display: none;
+    }
+    
+    .servico a{
+        font-size: 1.25em;
+    }
+
+    
+}    
